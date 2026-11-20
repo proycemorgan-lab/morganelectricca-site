@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Morgan Electric | Licensed Electrician in Thousand Oaks &amp; Ventura County, CA</title>
+<meta name="description" content="Morgan Electric is a licensed California electrical contractor (CSLB #1163899) serving Thousand Oaks and Ventura County. Panels, circuits, lighting, EV chargers, outdoor power and more. Call (805) 419-3367.">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Electrician",
+  "name": "Morgan Electric",
+  "legalName": "Ventura Building Solutions LLC",
+  "telephone": "+1-805-419-3367",
+  "url": "https://morganelectricca.com",
+  "description": "Licensed California electrical contractor (CSLB #1163899) serving Thousand Oaks and Ventura County.",
+  "areaServed": [
+    "Thousand Oaks, CA", "Westlake Village, CA", "Newbury Park, CA", "Camarillo, CA",
+    "Oxnard, CA", "Ventura, CA", "Simi Valley, CA", "Moorpark, CA"
+  ]
+}
+</script>
+<style>
+  :root{
+    --cream:#f6f0e4;
+    --cream-2:#efe6d3;
+    --red:#c8281e;
+    --red-dark:#a31d15;
+    --ink:#151515;
+    --muted:#4a463e;
+    --line:#d9cfb8;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--cream);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
+  img{max-width:100%;display:block}
+  a{color:inherit}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+  h1,h2,h3,.eyebrow,.btn,.nav a{font-family:'Oswald','Arial Narrow',Impact,sans-serif;text-transform:uppercase;letter-spacing:.04em}
+
+  /* header */
+  header{background:var(--cream);border-bottom:3px solid var(--ink);position:sticky;top:0;z-index:10}
+  .bar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:10px 0}
+  .logo{height:58px;width:auto}
+  .nav{display:flex;align-items:center;gap:22px}
+  .nav a{text-decoration:none;font-size:15px;font-weight:600}
+  .nav a:hover{color:var(--red)}
+  .btn{display:inline-block;text-decoration:none;background:var(--red);color:#fff;padding:13px 24px;font-weight:600;font-size:16px;border:3px solid var(--ink);box-shadow:4px 4px 0 var(--ink);transition:transform .08s,box-shadow .08s;cursor:pointer}
+  .btn:hover{transform:translate(2px,2px);box-shadow:2px 2px 0 var(--ink);background:var(--red-dark)}
+  .btn.alt{background:var(--cream);color:var(--ink)}
+  .btn.alt:hover{background:#fff}
+  .nav .btn{padding:9px 16px;font-size:14px;box-shadow:3px 3px 0 var(--ink);color:#fff}
+  .nav .btn:hover{color:#fff}
+
+  /* hero */
+  .hero{padding:72px 0 64px;background:
+    radial-gradient(circle at 85% 20%, rgba(200,40,30,.10), transparent 45%),
+    var(--cream)}
+  .eyebrow{display:inline-block;background:var(--ink);color:var(--cream);padding:6px 14px;font-size:14px;font-weight:600;margin-bottom:22px}
+  h1{font-size:clamp(38px,6.2vw,72px);line-height:1.02;font-weight:700;max-width:820px}
+  h1 em{font-style:normal;color:var(--red)}
+  .lead{font-size:19px;color:var(--muted);max-width:620px;margin:22px 0 32px}
+  .cta{display:flex;flex-wrap:wrap;gap:16px}
+  .trust{display:flex;flex-wrap:wrap;gap:10px 26px;margin-top:38px;font-size:15px;font-weight:500}
+  .trust span::before{content:"\26A1\FE0E";color:var(--red);margin-right:8px}
+
+  /* sections */
+  section{padding:68px 0}
+  section.alt{background:var(--cream-2);border-top:3px solid var(--ink);border-bottom:3px solid var(--ink)}
+  h2{font-size:clamp(30px,4.4vw,46px);line-height:1.05;font-weight:700;margin-bottom:12px}
+  .sub{color:var(--muted);max-width:640px;margin-bottom:38px;font-size:17px}
+
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:20px}
+  .card{background:#fff;border:3px solid var(--ink);padding:24px 22px;box-shadow:5px 5px 0 var(--ink)}
+  .card h3{font-size:21px;margin-bottom:8px}
+  .card h3::before{content:"";display:inline-block;width:12px;height:12px;background:var(--red);border:2px solid var(--ink);border-radius:50%;margin-right:10px;vertical-align:1px}
+  .card p{color:var(--muted);font-size:16px}
+
+  .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:26px;counter-reset:s}
+  .step{position:relative;padding-left:62px}
+  .step::before{counter-increment:s;content:counter(s);position:absolute;left:0;top:0;width:46px;height:46px;border-radius:50%;background:var(--red);color:#fff;border:3px solid var(--ink);font-family:'Oswald',sans-serif;font-size:24px;font-weight:700;display:flex;align-items:center;justify-content:center}
+  .step h3{font-size:21px;margin-bottom:6px}
+  .step p{color:var(--muted)}
+
+  .areas{display:flex;flex-wrap:wrap;gap:12px}
+  .areas span{background:#fff;border:2px solid var(--ink);padding:8px 16px;font-weight:600;font-size:16px}
+
+  .license{display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:center}
+  .badge{background:var(--ink);color:var(--cream);padding:30px;border:3px solid var(--ink);box-shadow:6px 6px 0 var(--red)}
+  .badge .k{font-family:'Oswald',sans-serif;text-transform:uppercase;letter-spacing:.08em;font-size:14px;color:#d8cfb9}
+  .badge .v{font-family:'Oswald',sans-serif;font-size:40px;font-weight:700;line-height:1.1;margin-bottom:14px}
+  .badge .v:last-child{margin-bottom:0}
+  .checks{list-style:none}
+  .checks li{padding:8px 0 8px 32px;position:relative;font-size:17px}
+  .checks li::before{content:"\2713";position:absolute;left:0;top:7px;color:#fff;background:var(--red);width:22px;height:22px;border-radius:50%;font-size:14px;display:flex;align-items:center;justify-content:center;font-weight:700}
+
+  .contact{background:var(--ink);color:var(--cream);text-align:center;border-top:3px solid var(--ink)}
+  .contact h2{color:var(--cream)}
+  .contact .sub{margin-left:auto;margin-right:auto;color:#d8cfb9}
+  .contact .phone{font-family:'Oswald',sans-serif;font-size:clamp(36px,7vw,64px);font-weight:700;letter-spacing:.03em;text-decoration:none;display:inline-block;margin:6px 0 24px}
+  .contact .phone:hover{color:#ff6b5e}
+  .contact .cta{justify-content:center}
+  .contact .btn{box-shadow:4px 4px 0 var(--red);border-color:var(--cream)}
+  .contact .btn.alt{background:transparent;color:var(--cream)}
+
+  footer{background:#0d0d0d;color:#b9b09b;font-size:14px;padding:30px 0}
+  footer .row{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 30px}
+  footer strong{color:var(--cream)}
+
+  @media (max-width:760px){
+    .nav a:not(.btn){display:none}
+    .license{grid-template-columns:1fr}
+    .logo{height:48px}
+    section{padding:52px 0}
+    .hero{padding:48px 0 46px}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a href="#top" aria-label="Morgan Electric home"><img class="logo" src="logo.png" alt="Morgan Electric LLC logo"></a>
+    <nav class="nav" aria-label="Main">
+      <a href="#services">Services</a>
+      <a href="#process">How it works</a>
+      <a href="#areas">Service areas</a>
+      <a class="btn" href="tel:+18054193367">Call (805) 419-3367</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap">
+      <span class="eyebrow">Licensed &bull; CSLB #1163899</span>
+      <h1>Electrical work done <em>right</em>, the first time.</h1>
+      <p class="lead">Morgan Electric is a licensed California electrical contractor serving Thousand Oaks and Ventura County. Clear written estimates, a written contract, and clean, code-compliant work.</p>
+      <div class="cta">
+        <a class="btn" href="tel:+18054193367">Call (805) 419-3367</a>
+        <a class="btn alt" href="sms:+18054193367">Text us</a>
+      </div>
+      <div class="trust">
+        <span>California licensed contractor</span>
+        <span>Insured</span>
+        <span>Written estimates &amp; contracts</span>
+      </div>
+    </div>
+  </div>
+
+  <section id="services" class="alt">
+    <div class="wrap">
+      <h2>What we do</h2>
+      <p class="sub">Residential electrical work, from a single outlet to a new panel or outdoor circuit.</p>
+      <div class="grid">
+        <div class="card"><h3>Panels &amp; breakers</h3><p>Panel replacement and upgrades, new breakers, and load calculations so your service can handle what you plan to add.</p></div>
+        <div class="card"><h3>New circuits &amp; wiring</h3><p>Dedicated circuits, new wiring runs, and old-work installs that keep drywall damage to a minimum.</p></div>
+        <div class="card"><h3>Outlets &amp; switches</h3><p>New outlets and switches, GFCI protection, and dimmers installed to code.</p></div>
+        <div class="card"><h3>Lighting</h3><p>Indoor and outdoor light fixtures, sconces, and landscape and patio lighting.</p></div>
+        <div class="card"><h3>EV charger installs</h3><p>Dedicated circuits and wall charger installation for your electric vehicle at home.</p></div>
+        <div class="card"><h3>Outdoor &amp; backyard power</h3><p>Weatherproof outlets, subpanels, patio heater circuits, and power for detached structures and back yards.</p></div>
+        <div class="card"><h3>Home energy monitors</h3><p>Whole-home energy monitor installation, including breaker connections and current sensors.</p></div>
+        <div class="card"><h3>Handyman electrical</h3><p>Small fixes and add-ons done by a licensed electrician, not a guess.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="process">
+    <div class="wrap">
+      <h2>How it works</h2>
+      <p class="sub">No surprises. You know the scope and the price before we start.</p>
+      <div class="steps">
+        <div class="step"><h3>Call or text</h3><p>Tell us what you need. We'll talk through the job and set up an estimate.</p></div>
+        <div class="step"><h3>Written estimate &amp; contract</h3><p>You get a clear written scope and price, then a written home improvement contract with the notices California requires.</p></div>
+        <div class="step"><h3>Work done right</h3><p>We do the job to code, pay attention to your home, and sign off when it's finished.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="areas" class="alt">
+    <div class="wrap">
+      <h2>Where we work</h2>
+      <p class="sub">Based in Thousand Oaks and serving the surrounding Ventura County communities.</p>
+      <div class="areas">
+        <span>Thousand Oaks</span><span>Westlake Village</span><span>Newbury Park</span><span>Camarillo</span>
+        <span>Oxnard</span><span>Ventura</span><span>Simi Valley</span><span>Moorpark</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="license">
+    <div class="wrap license">
+      <div class="badge">
+        <div class="k">California contractor license</div>
+        <div class="v">CSLB #1163899</div>
+        <div class="k">Classification</div>
+        <div class="v">C-10 Electrical</div>
+      </div>
+      <div>
+        <h2>Licensed and accountable</h2>
+        <ul class="checks">
+          <li>Licensed California electrical contractor</li>
+          <li>Liability insurance carried</li>
+          <li>Written estimates and written contracts</li>
+          <li>Check our license any time at cslb.ca.gov</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <h2>Ready to get started?</h2>
+      <p class="sub">Call or text for an estimate. We'll get back to you as soon as we can.</p>
+      <a class="phone" href="tel:+18054193367">(805) 419-3367</a>
+      <div class="cta">
+        <a class="btn" href="tel:+18054193367">Call now</a>
+        <a class="btn alt" href="sms:+18054193367">Send a text</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap row">
+    <div><strong>Morgan Electric</strong> &mdash; Ventura Building Solutions LLC dba Morgan Electric<br>CSLB License #1163899 &bull; Serving Thousand Oaks &amp; Ventura County, CA</div>
+    <div>&copy; <span id="yr">2026</span> Morgan Electric. All rights reserved.</div>
+  </div>
+</footer>
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+</body>
+</html>
